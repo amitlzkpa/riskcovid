@@ -124,10 +124,28 @@ export default {
       sympCondPossibilities.forEach(p => {
         input_params[p] = sympCond === p;
       });
-      
+
+      */
+     
       
 
       console.log(input_params);
+
+
+      
+      var xhr = new XMLHttpRequest();
+      var url = "/api/update";
+      xhr.open("POST", url, true);
+      xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          // console.log(xhr.responseText);
+          var json = JSON.parse(xhr.responseText);
+          console.log(json);
+        }
+      };
+      var postData = JSON.stringify(input_params);
+      xhr.send(postData);
 
 
     }
