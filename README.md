@@ -1,4 +1,4 @@
-# vuewebapp
+# riskcovid
 
 ## Project setup
 ```

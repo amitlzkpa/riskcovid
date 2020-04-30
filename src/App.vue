@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <vuewebapp />
+    <riskcovid />
   </div>
 </template>
 
 <script>
-import vuewebapp from './components/vuewebapp.vue'
+import riskcovid from './components/riskcovid.vue'
 
 export default {
   name: 'App',
   components: {
-    vuewebapp
+    riskcovid
   }
 }
 </script>
