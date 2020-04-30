@@ -125,8 +125,6 @@ export default {
         input_params[p] = sympCond === p;
       });
 
-      */
-     
       
 
       console.log(input_params);
