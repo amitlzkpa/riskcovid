@@ -58,7 +58,6 @@ export default {
       var smokHab = j.filter(i => i.key === "smoking-habits")[0].answer.toLowerCase();
       var fmrSmk = false;
       var curSmk = false;
-      console.log(smokHab);
       if (smokHab.includes("yes.")) {
         curSmk = true;
         fmrSmk = true;
